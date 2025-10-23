@@ -1,0 +1,14 @@
+CompileFlags:
+  Add: [
+    # arm-none-eabi-gcc -v -E -
+    "-IC:\\qp\\qtools\\gnu_arm-none-eabi\\bin\\..\\lib\\gcc\\arm-none-eabi\\10.3.1\\include",
+    "-IC:\\qp\\qtools\\gnu_arm-none-eabi\\bin\\..\\lib\\gcc\\arm-none-eabi\\10.3.1\\include-fixed",
+    "-IC:\\qp\\qtools\\gnu_arm-none-eabi\\bin\\..\\lib\\gcc\\arm-none-eabi\\10.3.1\\..\\..\\..\\..\\arm-none-eabi\\include",
+  ]
+  Remove: [
+    -mthumb-interwork,
+  ]
+  CompilationDatabase: build/ # path of compile_commands.json
+
+Diagnostics:
+  UnusedIncludes: None # ignore unused includes warning
